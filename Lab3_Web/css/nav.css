@@ -1,0 +1,32 @@
+/* Стилі для навігації */
+nav {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 1rem;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 0.75rem;
+    transition: background-color 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+    border-radius: 3px;
+}
+
+nav a.active {
+    border-bottom: 2px solid #0066cc;
+}

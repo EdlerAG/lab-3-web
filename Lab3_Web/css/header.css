@@ -1,0 +1,24 @@
+/* Стилі для шапки */
+header {
+    text-align: center;
+    padding: 1rem 0;
+    /* Без фону для мінімалізму */
+}
+
+header .logo {
+    /* Логотип розташований ліворуч зверху або на власний розсуд */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+header .logo img {
+    display: block;
+    /* Розміри вказані в HTML; тут можна задати max-width якщо треба */
+}
+
+header h1 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}

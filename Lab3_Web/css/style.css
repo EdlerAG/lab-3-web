@@ -1,0 +1,176 @@
+/*
+  Головний файл стилів, де імпортуємо інші файли
+  через @import.
+*/
+@import url("header.css");
+@import url("nav.css");
+@import url("footer.css");
+
+/* -------------------------------------------------------------------------- */
+/* Глобальні стилі                                                            */
+/* -------------------------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff; /* Мінімалістичний білий фон */
+}
+
+/* Заголовки */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+
+/* Абзаци, статті, секції */
+p {
+    margin-bottom: 1rem;
+}
+
+section {
+    margin: 1rem auto;
+    max-width: 800px;
+    padding: 0 1rem;
+}
+
+section ul {
+    list-style-type: circle;
+    margin-left: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+/* Цитати-блоки */
+blockquote {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid #ccc;
+    font-style: italic;
+    background-color: #f9f9f9;
+}
+
+/* Посилання "Читати далі" у блозі */
+.read-more {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: underline;
+    color: #0066cc;
+    font-size: 0.9rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Форми (базові стилі)                                                       */
+/* -------------------------------------------------------------------------- */
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+label {
+    margin: 0.5rem 0 0.25rem;
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-family: inherit;
+}
+
+/* Кнопка надсилання */
+button[type="submit"] {
+    padding: 0.75rem 1.25rem;
+    border: none;
+    cursor: pointer;
+    background-color: #0066cc;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+    background-color: #004999;
+}
+
+/* -------------------------------------------------------------------------- */
+/* ОНОВЛЕНІ СТИЛІ ДЛЯ ВІДЦЕНТРУВАНОЇ ФОРМИ                                     */
+/* -------------------------------------------------------------------------- */
+
+/* Обгортка форми (формує "картку", центрує і стилізує) */
+.form-wrapper {
+    max-width: 600px;          /* Задаємо обмеження по ширині */
+    margin: 2rem auto;         /* Центрування (auto) і відступ зверху/знизу */
+    padding: 1.5rem 2rem;      /* Внутрішні відступи для зручності */
+    border: 1px solid #ccc;    /* Легка сіра рамка */
+    border-radius: 8px;        /* Трохи заокруглені кути */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Легка тінь */
+    background-color: #fff;    /* Фон — білий, щоб зберегти мінімалізм */
+}
+
+/* Якщо хочемо заголовок усередині .form-wrapper (див. варіант) */
+.form-wrapper h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Приклади адаптивності (на мобільних можна змінювати поведінку) */
+@media (max-width: 600px) {
+    .form-wrapper {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+    button[type="submit"] {
+        align-self: center;  /* На вузьких екранах кнопка по центру */
+        width: 100%;         /* На весь блок, якщо бажаєте */
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* Медіа-запити для базової адаптивності                                      */
+/* (Доповнюють або перезаписують загальносайтові стилі, за потреби)          */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 0 0.5rem;
+    }
+
+    form {
+        max-width: 100%;
+    }
+}

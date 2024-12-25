@@ -1,0 +1,13 @@
+/* Стилі для підвалу */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+    /* Без фону, мінімалістично */
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

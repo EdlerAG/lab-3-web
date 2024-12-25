@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Контакти</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="images/logo.png" alt="Логотип" width="80" height="80" />
+        </a>
+    </div>
+    <h1>Залиштеся з нами на зв'язку</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Головна</a></li>
+        <li><a href="about.html">Про нас</a></li>
+        <li><a href="services.html">Послуги</a></li>
+        <li><a href="blog.html">Блог</a></li>
+        <li><a href="contact.html" class="active">Контакти</a></li>
+    </ul>
+</nav>
+
+<main>
+    <section>
+        <h2>Як нас знайти</h2>
+        <p>
+            Наш офіс знаходиться за адресою: м. Київ, проспект Берестейський, 37. <br/>
+            Телефон: +380 (99) 123 45 67 <br/>
+            Електронна пошта: info@mycoolsite.com
+        </p>
+    </section>
+
+    <section>
+        <h2>Форма зворотнього зв’язку</h2>
+
+        <!-- Обгортка з класом .form-wrapper для гарного відцентровування і стилю -->
+        <div class="form-wrapper">
+            <form id="contact-form" novalidate>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Електронна пошта:</label>
+                <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="name@example.com"
+                        required
+                />
+
+                <label for="message">Повідомлення:</label>
+                <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required
+                ></textarea>
+
+                <button type="submit">Відправити</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024, Мій Крутий Сайт — "Контакти". Завжди вам раді!</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
